@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package teovet;
-
+import java.util.Scanner;
 /**
  *
  * @author dks
@@ -15,8 +15,19 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Bienvenido a MateoVet!");
+     Scanner  scanner = new Scanner(System.in);
+       int option; 
+
+     System.out.println("Bienvenido a MateoVet!");
+     
+     System.out.println("1.Registrar un nuevo paciente");
+     System.out.println("2.Buscar un paciente");
+     System.out.println("3.Editar un paciente");
+     System.out.println("4.Eliminar un paciente");
+     System.out.println("5.Salir");
+      
+     option = Integer.valueOf (scanner.nextLine());
+     System.out.println("Usted ha seleccionado la opción " + String.valueOf(option));
     }
     
 }
