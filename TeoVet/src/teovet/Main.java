@@ -28,6 +28,8 @@ public class Main {
       
      option = Integer.valueOf (scanner.nextLine());
      System.out.println("Usted ha seleccionado la opción " + String.valueOf(option));
+     
+     Patient patient = new Patient(0001, "Teo", "19/11/1991");
     }
     
 }
