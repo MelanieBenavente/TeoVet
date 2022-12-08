@@ -5,6 +5,7 @@
  */
 package teovet;
 import java.util.Scanner;
+import java.util.ArrayList;
 /**
  *
  * @author dks
@@ -30,6 +31,12 @@ public class Main {
      System.out.println("Usted ha seleccionado la opción " + String.valueOf(option));
      
      Patient patient = new Patient(0001, "Teo", "19/11/1991");
+     
+    ArrayList<Patient> patientList = new ArrayList<>();
+       
+         patientList.add(patient);
+         
+        System.out.println(patient);
     }
     
 }
