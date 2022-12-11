@@ -27,8 +27,6 @@ public class Main {
      System.out.println("4.Eliminar un paciente");
      System.out.println("5.Salir");
       
-     option = Integer.valueOf (scanner.nextLine());
-     System.out.println("Usted ha seleccionado la opción " + String.valueOf(option));
      
      Patient patient = new Patient(0001, "Teo", "19/11/1991");
      
@@ -39,6 +37,24 @@ public class Main {
          
      System.out.println(patient.name);
      //System.out.println(patientList.get(0).name);
+     
+     option = Integer.valueOf (scanner.nextLine());
+      
+          if (option == 1){
+            System.out.println("Esta es la opción 1");
+          }
+          else if (option == 2){
+            System.out.println("No es la opción 1");
+          }
+          else if (option == 3){
+            System.out.println("No es la opción 1");
+          }
+          else if (option == 4){
+            System.out.println("No es la opción 1");
+          }
+          else if (option == 5){
+            System.out.println("No es la opción 1");
+          }
     }
     
 }
