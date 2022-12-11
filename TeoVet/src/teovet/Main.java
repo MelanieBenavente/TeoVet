@@ -34,9 +34,11 @@ public class Main {
      
     ArrayList<Patient> patientList = new ArrayList<>();
        
-         patientList.add(patient);
+     patientList.add(patient);
          
-        System.out.println(patient);
+         
+     System.out.println(patient.name);
+     //System.out.println(patientList.get(0).name);
     }
     
 }
