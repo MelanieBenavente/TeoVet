@@ -49,7 +49,7 @@ public class Main {
             imprimirLista(patientList);
           }
           else if (option == 2){
-            System.out.println("No es la opción 1");
+            imprimirLista(patientList);
           }
           else if (option == 3){
             System.out.println("No es la opción 1");
@@ -68,7 +68,7 @@ public class Main {
             String nombre = listado.get(i).name;
             String fecha = listado.get(i).dateBorn;
             int id = listado.get(i).id;
-            System.out.println("NOMBRE: " + nombre + " NACIMIENTO: " + fecha + " ID: " + id);
+            System.out.println("Posición: " + i + " NOMBRE: " + nombre + " NACIMIENTO: " + fecha + " ID: " + id);
         }
     }
     
