@@ -49,7 +49,11 @@ public class Main {
             imprimirLista(patientList);
           }
           else if (option == 2){
-            imprimirLista(patientList);
+              if (patientList.isEmpty()){
+                  System.out.println("No hay pacientes registrados");
+              } else {
+                 imprimirLista(patientList); 
+              } 
           }
           else if (option == 3){
             System.out.println("No es la opción 1");
