@@ -46,13 +46,13 @@ public class Main {
             Patient patientIntroduced = new Patient(idInvented, patientName, ageIntroduced);
             
             patientList.add(patientIntroduced);
-            imprimirLista(patientList);
+            showAll(patientList);
           }
           else if (option == 2){
               if (patientList.isEmpty()){
                   System.out.println("No hay pacientes registrados");
               } else {
-                 imprimirLista(patientList); 
+                 showAll(patientList); 
               } 
           }
           else if (option == 3){
@@ -67,7 +67,7 @@ public class Main {
        }
     }
     
-    public static void imprimirLista(ArrayList<Patient> listado){
+    public static void showAll(ArrayList<Patient> listado){
         for (int i = 0; i < listado.size(); i++){
             String nombre = listado.get(i).name;
             String fecha = listado.get(i).dateBorn;
@@ -76,4 +76,5 @@ public class Main {
         }
     }
     
+   
 }
