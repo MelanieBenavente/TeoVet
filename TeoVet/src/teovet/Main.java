@@ -25,7 +25,7 @@ public class Main {
          
      
      System.out.println("1.Registrar un nuevo paciente");
-     System.out.println("2.Buscar un paciente");
+     System.out.println("2.Mostrar todos");
      System.out.println("3.Editar un paciente");
      System.out.println("4.Eliminar un paciente");
      System.out.println("5.Salir");
