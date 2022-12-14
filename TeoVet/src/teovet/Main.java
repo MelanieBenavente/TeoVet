@@ -6,6 +6,7 @@
 package teovet;
 import java.util.Scanner;
 import java.util.ArrayList;
+
 /**
  *
  * @author dks
@@ -33,6 +34,7 @@ public class Main {
     
           
      option = Integer.valueOf (scanner.nextLine());
+     
       
           if (option == 1){
             System.out.println("Introduzca el nombre del paciente");
@@ -59,7 +61,15 @@ public class Main {
             System.out.println("No es la opción 1");
           }
           else if (option == 4){
-            System.out.println("No es la opción 1");
+             showAll(patientList);
+             scanner = new Scanner(System.in);
+             System.out.println("Qué posición desea eliminar?");
+             int element = Integer.valueOf(scanner.nextLine());
+            
+             patientList.remove(element);
+                 System.out.println("El usuario ha sido eliminado");
+             
+             
           }
           else if (option == 5){
             System.out.println("Salir");
