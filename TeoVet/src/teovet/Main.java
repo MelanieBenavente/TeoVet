@@ -32,8 +32,11 @@ public class Main {
      System.out.println("5.Salir");
      
     
-          
-     option = Integer.valueOf (scanner.nextLine());
+     String valueIntroduced = scanner.nextLine();     
+     if (!isANumber(valueIntroduced)){
+       System.out.println("Debes introducir un número");
+     } else {
+     option = Integer.valueOf (valueIntroduced);
      
       
           if (option == 1){
@@ -67,16 +70,20 @@ public class Main {
              int element = Integer.valueOf(scanner.nextLine());
             
              patientList.remove(element);
-                 System.out.println("El usuario ha sido eliminado");
+             System.out.println("El usuario ha sido eliminado");
              
              
           }
           else if (option == 5){
             System.out.println("Salir");
           }
+          else if (option >= 6){
+              System.out.println("Opción incorrecta. Debes seleccionar una de las opciones del menú");
+             }
+          }
+      }
        }
-    }
-    
+        
     public static void showAll(ArrayList<Patient> listado){
         for (int i = 0; i < listado.size(); i++){
             String nombre = listado.get(i).name;
@@ -85,6 +92,13 @@ public class Main {
             System.out.println("Posición: " + i + " NOMBRE: " + nombre + " NACIMIENTO: " + fecha + " ID: " + id);
         }
     }
-    
+    public static boolean isANumber(String str) {
+    try {
+        Integer.parseInt(str);
+        return true;
+    } catch (NumberFormatException e) {
+        return false;
+    }
+}
    
 }
